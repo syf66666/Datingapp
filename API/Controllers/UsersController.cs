@@ -23,7 +23,6 @@ namespace API.Controllers
         public async Task<ActionResult<List<AppUser>>> GetUsers(int id){//IEnumerable is the simple version of List?
             return await this.context.Users.ToListAsync();
         }
-    
 
         // api/users/3
         [HttpGet("{id}")]
